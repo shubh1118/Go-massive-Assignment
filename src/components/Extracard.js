@@ -37,7 +37,7 @@ export default function RecipeReviewCard(props) {
         <Chip
           label={props.label}
           size="small"
-          sx={{ marginRight: 25, marginTop: 2,marginLeft:2 }}
+          sx={{ marginRight: 25, marginTop: 2, marginLeft: 2 }}
         />
         <CardHeader
           avatar={<img src={icon} alt="" height="64px" width="64px" />}
@@ -60,7 +60,11 @@ export default function RecipeReviewCard(props) {
           subheader={props.subheader}
         />
         {props.content && (
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ marginLeft: 2, marginRight: 2, marginBottom: 2}}
+          >
             {props.content}
           </Typography>
         )}
